@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- class name & id  -->
+    <h1 class="para">hello!</h1>
+    <h1  class="para">hyyy!</h1>
+   
+    <p id="result"></p>
+    <p id="result1"></p>
+    <script>
+        
+        let p = document.getElementsByClassName("para");
+
+        document.getElementById("result").innerHTML = "doms result is "+ p[0].innerHTML
+        document.getElementById("result1").innerHTML = "doms result is "+ p[1].innerHTML
+        
+    </script>
+
+
+<!-- tagname 
+ -->
+ <h2 >all is well</h2>
+ <h2 >alhamdullila</h2>
+
+ <p id="rwesulta"></p>
+ <p id="rwesultb"></p>
+
+ <script>
+        
+    let t = document.getElementsByTagName("h2");
+
+    document.getElementById("rwesulta").innerHTML = "the  result is "+ t[0].innerHTML;
+    document.getElementById("rwesultb").innerHTML ="the result is "+ t[1].innerHTML;
+
+
+</script>
+
+// name (attribute) 
+<p> First Nmae :<input type="text" name="fname" value="ayesha"></p>
+<p> Last Name :'<input type="text" name="fname" value="mirza"></p>
+<p id="result1"></p>
+
+<script>
+    let element = document.getElementsByName("fname");
+    document.getElementById("result1").innerHTML = element[1].value;
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .apply{
+            color:blue;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<!-- innerHTML   -->
+    <p id="date"></p>
+    <script>
+        document.getElementById("date").innerHTML = "today date is :" +Date()
+    </script>
+
+
+<!-- src   -->
+<h1 id="head">MEME DOG!</h1>
+<img src="pexels-ilargian-faus-1629780.jpg" id="myImage" alt="" style="width:200px; height:200px;">
+<button onclick="changeimg()"> change </button>
+<script>
+    function changeimg(){
+        document.getElementById("myImage").src= "pexels-ilargian-faus-1629781.jpg";
+    }
+</script>
+
+
+<!-- button click change css  -->
+<h1 id="head1">hello world</h1>
+<button onclick="myfunction()">Apply CSS!</button>
+<script>
+    function myfunction(){
+        document.getElementById("head1").setAttribute("class","apply");
+            }
+</script>
+</body>
+</html>
